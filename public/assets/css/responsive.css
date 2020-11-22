@@ -1,0 +1,298 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+.layer-img{ margin: 40px 0 0 170px;width: 360px;}	
+.caption.style-1{ right: 90px;}
+.caption.style-1 h1{ font-size: 45px;}
+.caption.style-1 b{ font-size: 37px; line-height: 35px; margin: 0 0 20px;}
+}
+@media only screen and (max-width : 1199px) {
+.navigation{ margin: 15px 0 0;}
+.navigation > ul > li > a{ padding: 30px 20px;}
+.layer-img{ margin: 40px 0 0 70px;}
+.caption.style-1{ width: 390px;}
+.caption.style-2{ width: 540px;}
+.caption.style-2 h1{ font-size: 36px;}
+.release-thumb-holder{ width: 54.5%;}
+.release-book-detail .detail h4{ font-size: 20px;}
+.release-book-detail .detail p{ font-size: 10px;}
+.release-thumb li:last-child{ display: none!important;}
+.bx-wrapper .bx-controls-direction{ right: -607px;}
+.upcoming-slider::before{ height: 86.6%;}
+.add-banner-2 h3{ font-size: 32px;}
+.add-banner-2 p{ font-size: 14px;}
+.add-banner h3{ font-size: 16px;}
+.add-banner p{ font-size: 12px;}
+.recomend-slider{ background: url("../images/book-shelf-img.png") no-repeat 2px 31px; background-size: 100% 100%;}
+
+.nav-holder.style-2 .navigation > ul > li > a{ padding: 30px 15px 15px;}
+.language-select{ width: 120px;}
+.search-bar.style-2{ width: 180px;}
+.search-bar.style-2 input{ font-size: 12px;}
+.follow-nd-s-pro .follow{ width: 49%;}
+.aurthor-history.style-2 .left-box p{ margin: 0 0 10px; font-size: 13px!important;}
+.blog-style-1.style-2 .post-box .thumb{ width: auto!important;}
+.blog-style-1 .post-box .text-column em{ font: 400 11px/13px "Lato",sans-serif;}
+
+.collection-content > ul > li{ width: 17.1%!important; margin: 10px 0 10px 20px!important;}
+.s-product-hover ul li a{ font-size: 10px; height: 21px; line-height: 21px; width: 21px;}
+.progress-rating .progress{ margin: 0;}
+.s-product h6{ font-size: 14px;}
+.s-product > span{ font-size: 12px;}
+.sidebar ul li a{ font-size: 12px;}
+.sidebar h4{ font-size: 16px;}
+.services-text h3{ font-size: 18px;}
+#dates > li{ width: 112px;}
+.timeline-area .text-box .left-box{ width: 347px;}
+.gallery > ul > li{ width: 31.6%;}
+.blog-style-1 .post-box .thumb{ width: 120px;}
+.blog-style-1 .post-box .text-column a{ font-size: 10px; padding: 0 0 5px;}
+.footer-links li a{ font-size: 13px;}
+.footer-links li::before{ top: -3px;}
+.address-list.style-2{ margin: 0;}
+
+.product-thumnbnail #product-thumbs a{ padding: 15px 18.7px;}
+.team-detail h5{ font-size: 14px;}
+
+.filter-tags-holder ul li a{ min-width: 80px;}
+.error-area{ width: 77%;}
+}
+@media only screen and (max-width : 1024px) {
+.main-slider .owl-nav .owl-prev{ left: 50px;}
+.main-slider .owl-nav .owl-next{ right: 50px;}
+.layer-img{ width: 300px; margin: 40px 0 0 120px;}
+.caption.style-1 b{ display: none;}
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {}
+@media only screen and (max-width : 991px) {
+.online-option{ display: none;}
+.layer-img{ margin: 40px 0 0;}
+.caption.style-1{ right: 0;}
+.caption.style-2{ width: 420px;}
+.nav-holder.style-1{ padding: 20px 0;}
+.navigation{ display: none;}
+.recomend-slider{ padding: 0 130px 95px;}
+.sidebar{ margin: 0 0 30px;}
+.sidebar ul{ height: 300px;}
+.services-text{ margin: 0 0 30px;}
+.aurthor-img{ margin: 0 auto 30px; width: 40%;} 
+.timeline-area .text-box .left-box{ width: 367px;}
+.blog-style-1{ padding: 0 0 30px;}
+.add-banner{ margin: 0 0 60px;}
+.footer-column{ min-height: 320px;}
+.release-book-detail::before{ display: none;}
+.release-book-detail{ width: 70%; margin: 0 auto; float: none;}
+.release-thumb li:last-child{ display: block!important;}
+.upcoming-slider{ padding: 40px 0 0;}
+.release-thumb-holder{ text-align: center; float: none; width: 100%;}
+.release-thumb-holder ul{ display: inline-block;}
+.release-thumb{ float: none;}
+.upcoming-slider::before{ height: 94%;}
+.upcoming-slider{ min-height: 510px;}
+.bx-wrapper .bx-controls-direction{ top: -105px; right: -140px;}
+.release-heading h4{ font-size: 18px;}
+.best-sellers-tabs .tabs-nav li a{ padding: 12px 20px; font-size: 10px; text-align: center;}
+.aurthor-history.style-2{ margin: 0 0 30px;}
+.blog-style-1.style-2{ padding: 0;}
+.follow-nd-s-pro .follow{ width: 100%; margin: 0 0 30px;}
+.follow-nd-s-pro .s-related-products{ width: 100%; float: none;}
+
+.search-nd-drop{ margin: 10px; float: right;}
+.nav-holder.style-2 .logo{ margin: 0 auto 20px; width: 27%; float: none;}
+.address-list.style-2{ float: left;}
+.add-to-cart{ float: right;}
+.address-list.style-2 ul li{ margin: 0 0 0 20px;}
+.address-list.style-2 ul li:first-child{ margin: 0;}
+
+.single-product-detail h3{ font-size: 22px;}
+.product-thumnbnail #product-thumbs a{ padding: 15px 16.3px;}
+.add-review form{ width: 100%;}
+
+.list-blog div > div > img{ width: 100%; margin: 0 0 30px;}
+.list-blog .blog-detail h3{ font-size: 20px;}
+
+.blog-arthor{ margin: 30px 0 0;}
+.author-list-detail span{ font-size: 12px;}
+.recommended-book{ margin: 15px 0;}
+.address-column{ margin: 15px 0;}
+.contant-map{ height: 400px;}
+.event-img{ margin: 0 0 30px;}
+
+.book-list-header .option-set{ float: left; margin: 30px 0 0; overflow: hidden;}
+
+.book-list-btm .user-likes ul li:last-child{ font-size: 12px;}
+.book-list-detail h5{ font-size: 14px;}
+.book-list-widget .detail{ padding: 0 0 0 130px;}
+.book-list-btm .user-likes,
+.book-list-btm .like-nd-share{ float: none; text-align: center;}
+.book-list-btm .user-likes ul,
+.book-list-btm .like-nd-share ul{display: inline-block;}
+.error-area{ width: 100%;}
+.error-heading h2{ font-size: 42px;}
+
+.nav-holder.style-2 .responsive-btn{ display: block; position: static; float: left; margin: 20px 0 0; padding: 0;}
+.quick-view .modal-content{ width: 600px;}
+
+.r-nav-logo{ margin: 0 auto 30px; width: 50%;}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 800px) {
+.responsive-btn{display: block;}
+.layer-img{ width: 230px; margin: 40px 0 0 70px;}
+.caption .btn-1{ height: 38px; line-height: 38px; padding: 0 16px;}
+.caption.style-1{ right: 100px; width: 290px;}
+.caption.style-1 h1{ font-size: 20px;}
+.caption.style-2 h1{ font-size: 26px;}
+.caption.style-2 p{ display: none;}
+.post-thumnail-slider #thumbnail a {float: none; display: inline-block; margin: 0 -4px 0 9px; vertical-align: top; width: 15%;}
+}
+@media only screen and (max-width : 767px) {
+.layer-img{ visibility: hidden; opacity: 0; margin: 0;}
+.caption.style-1 p{ display: none;}
+.caption.style-1 b{ display: block; font-size: 18px; line-height: 18px;}
+.caption.style-1{ right: 40px;}
+.owl-nav .owl-prev, .owl-nav .owl-next{ height: 40px; width: 40px; line-height: 40px; margin: -22px 0 0;}
+.caption.style-2{ width: 310px;}
+.caption.style-2 h1{ font-size: 20px;}
+.release-heading{ width: 100%;}
+.best-sellers-tabs .tabs-nav{ margin: 0 0 0 -10px;}
+.best-sellers-tabs .tabs-nav li{ margin: 0 0 10px 10px!important; border-left: 1px solid #efefef;}
+.tabs-nav-holder::before{ width: 86%;}
+.collection-content > ul > li{ width: 21.4%!important;}
+.s-product-tooltip{ display: none;}
+#dates > li{ width: 91px;}
+.timeline-area .text-box .left-box{ width: 430px; margin: 0 20px 40px 0;}
+.s-related-products{ float: none; margin: 0;}
+.gallery > ul > li{ width: 31.5%;}
+.footer-column{ min-height: 370px;}
+.release-thumb li:last-child{ display: none!important;}
+.upcoming-slider{ min-height: 540px;}
+.sub-foorer .col-sm-6{ width: 100%!important; text-align: center;}
+.sub-foorer .col-sm-6 p{ margin: 0 0 10px;}
+.sub-foorer .col-sm-6 a{ float: right!important;}
+.sub-foorer .col-sm-6 ul{ display: inline-block; float: none; margin: 0 0 0 100px;}
+.address-list.style-2{ display: none;}
+.add-to-cart{ display: none;}
+.nav-holder.style-2 .logo{ margin: 0 auto;}
+.pull-none{ float: none!important;}
+aside{ margin: 80px 0 0;}
+.single-aurthor-detail aside{ margin: 0;}
+
+.product-thumnbnail{ margin: 0 0 40px;}
+.disc-reviews-tabs .tabs-nav{ margin: 0 0 30px;}
+.arthor-detail-column{ margin: 0 0 30px;}
+.laptop-img{ display: none;}
+
+.error-heading h2{ font-size: 36px;}
+.collection-content > ul > li{ min-height: 300px;}
+.tc-padding{ padding: 50px 0;}
+.tc-padding-top{ padding-top: 50px;}
+.tc-padding-bottom{ padding-bottom: 50px;}
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 639px) {
+.topbar .social-icons{ display: none;}
+.cart-option{ margin: 0;}
+.caption{ display: none;}
+.recomend-slider .owl-prev{ left: 0; right: auto;}
+.recomend-slider .owl-next{ right: 0; left: auto;}
+.collection-content > ul > li{ width: 29.1% !important;}
+.pagination-holder ul li{ margin: 0;}
+#dates > li{ width: 75px;}
+.gallery > ul > li{ width: 47.8%;}
+.footer-column{ min-height: 300px;}
+.main-heading h2{ font-size: 14px;}
+.main-heading p{ font-size: 12px;}
+.release-thumb a.active{ padding: 5px;}
+.bx-wrapper .bx-controls-direction{ left: -46px;}
+
+.aurthor-history.style-2 > img{ position: static; margin: 0 0 30px;}
+.aurthor-history.style-2{ padding: 0;}
+.author-list-widget{ padding: 0;}
+.arthor-list-img{ position: relative; margin: 0 0 30px;}
+.arthor-list-img > img{ width: 100%;}
+.address-column strong{ font-size: 12px;}
+
+.error-heading{ padding: 0 0 0 122px;}
+.error-heading h2{ line-height: 33px; font-size: 24px;}
+.error-area p{ font-size: 14px;}
+.error-heading > span{ font-size: 60px; line-height: 66px;}
+.release-thumb li:nth-child(4){ display: none;}
+.release-book-detail .detail{ width: 50%;}
+.plus-icon{ margin: -11px 0 0 -20px !important;}
+.quick-view .modal-content{ width: 420px;}
+.related-products{ margin: 0 0 30px;}
+}
+@media only screen and (max-width : 480px) {
+.tweet-slider .owl-nav{ bottom: auto; top: 0;}
+.login-modal .modal-content{width: 375px;}
+.post-thumnail-slider #thumbnail a {float: none; display: inline-block; margin: 0 -4px 0 8px;vertical-align: top;width: 15%;}
+}
+@media only screen and (max-width : 479px) {
+.cart-option ul li{ margin: 0 0 0 10px;}
+.release-book-detail{ width: 100%;}
+.bx-wrapper .bx-controls-direction{ left: auto;}
+.best-sellers-tabs .tabs-nav li a{ min-width: 99px; padding: 10px;}
+.tabs-nav-holder::before{ width: 76%;}
+.add-banner{ padding: 30px!important; margin: 0 0 30px;}
+.recomend-slider{ padding: 0 10px 95px;}
+.add-banner > img{ display: none!important;}
+.collection-content > ul > li{ width: 44.4% !important; text-align: center;}
+.aurthor-img{ width: 80%;}
+h2{ font-size: 18px;}
+.gallery > ul > li{ width: 100%;}
+.gallery > ul > li img{ width: 100%;}
+.tweet-slider .item{ padding: 0 5px 0 63px!important;}
+.sub-foorer .col-sm-6 ul{ margin: 0;}
+.recomend-slider .owl-item{ width: auto!important;}
+.search-nd-drop{ display: none;}
+.r-full-width{ width: 100%!important;}
+.sort-dropdown{ margin: 0 0 30px; float: none!important;}
+.sort-dropdown:last-child{ margin: 0;}	
+.add-cart-alert{ text-align: center;}
+.add-cart-alert .btn-1{ display: inline-block; float: none; margin: 10px 0 0;}
+.single-product-detail h3{ font-size: 16px;}
+.large-blog-post h3{ font-size: 15px;}
+.inner-page-heading h2{ font-size: 20px;}
+.large-blog-img.video iframe{ height: 170px;}
+.facts-list ul li{ margin: 0 0 30px;}
+.call-action{ text-align: center;}
+.call-action .btn-1{ display: inline-block; float: none; margin: 20px 0 0;}
+.action-text h3{ font-size: 22px;}
+
+.book-list-detail .detail{ padding: 0;}
+.book-list-detail > img{ position: static; margin: 0 0 30px;}
+.book-list-btm .user-likes ul li:last-child{ display: none;}
+
+.nav-holder.style-2 .responsive-btn{ margin: 10px 0;}
+.quick-view .modal-content{ width: 300px;}
+.single-product-detail .btn-list li{ margin: 0 5px 5px 0;}
+.best-sellers-tabs .tabs-nav li a{ min-width: 87px;}
+#magazine{ width: 250px; height: 250px;}
+.open-book-view .modal-content{ padding: 30px;}
+.release-thumb li:nth-child(3){ display: none;}
+#dates > li{ width: 45px;}
+.sec-heading .view-all{ margin: 0;}
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+.login-modal .modal-content{width: 320px;}
+.collection-content > ul > li{ width: 43.4% !important;}
+.pagination-holder ul li a{ height: 21px; line-height: 19px; padding: 0 5px;}
+#dates .selected{ font-size: 18px;}
+.sec-heading h3, .sec-heading h4{ font-size: 16px;}
+.tweet-slider .owl-nav{ bottom: auto; top: 0;}
+.related-product .mCSB_scrollTools.mCSB_scrollTools_horizontal{ width: 100%;}
+.tc-padding-bottom{ padding-bottom: 60px!important;}
+.tc-padding-top{ padding-top: 60px!important;}
+.tc-padding{ padding: 60px 0;} 
+.release-thumb li{ float: left; height: 250px; margin: 0 0 0 19px!important; width: 126px;}
+.release-thumb li a .b-shadow{ display: inline-block;}
+.recomend-slider .owl-nav .owl-prev, .recomend-slider .owl-nav .owl-next{ margin: -54px 0 0 0; }
+.main-heading h2::before, .main-heading h2::after{ width: 60px;}
+.main-heading h2{ font-size: 13px; padding: 0 10px;}
+}

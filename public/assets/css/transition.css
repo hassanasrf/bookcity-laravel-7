@@ -1,0 +1,37 @@
+/* Theme transition Effect */
+*:after,
+*:before,
+a,
+p,
+h1,h2,h3,h4,h5,h6,
+button,
+.adds-book,
+.owl-prev,
+.owl-next,
+.aurthor-timeline .tabs-nav li.active a i,
+.footer-links li,
+.plus-icon,
+.product-cart-option,
+.product-cart-option li,
+.s-product-hover,
+.service-icon,
+.overlay,
+.view-page-overlay,
+.view-page,
+.navigation ul li ul,
+.heart-batch,
+.service-column.style-2,
+.team-column .overlay-padding,
+.address-column .address-icon
+{-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;}
+
+
+
+
+
+
+
