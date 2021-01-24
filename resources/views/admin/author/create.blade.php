@@ -21,7 +21,7 @@
 
       <!-- SELECT2 EXAMPLE -->
       <!-- form start -->
-      <form name="formCreate" id="formCreate" method="post" enctype="multipart/form-data" action="/admin/author">
+      <form name="formCreate" id="formCreate" method="post" enctype="multipart/form-data" action="{{ asset('admin/author') }}">
       @csrf
       <div class="box box-primary">
         <!-- /.box-header -->

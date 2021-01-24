@@ -26,10 +26,10 @@ Manage Author
                 <a class="btn btn-danger btn-xm"><i class="fa fa-eye"></i></a>
                 <a class="btn btn-danger btn-xm"><i class="fa fa-eye-slash"></i></a>
                 <a class="btn btn-danger btn-xm"><i class="fa fa-trash"></i></a>
-                <a href="/admin/author/create" class="btn btn-default btn-xm"><i class="fa fa-plus"></i></a>
+                <a href="{{ asset('admin/author/create') }}" class="btn btn-default btn-xm"><i class="fa fa-plus"></i></a>
             </h3>
             <div class="box-tools">
-                <form method="get" action="/admin/author">
+                <form method="get" action="{{ asset('admin/author') }}">
                     <div class="input-group input-group-sm" style="width: 250px;">
                         <input type="text" name="s" class="form-control pull-right" placeholder="Search">
                         <div class="input-group-btn">
@@ -60,13 +60,13 @@ Manage Author
                     <td>{{ $author->designation }}</td>
                     <td>
                         @if($author->author_img == 'No image found')
-                        <img src="/assets/admin/dist/img/noimage.png" width="100" alt="No Image">
+                        <img src="{{ asset('assets/admin/dist/img/noimage.png') }}" width="100" alt="No Image">
                         @else
-                        <img src="/uploads/{{ $author->author_img }}" width="100" alt="No Image">
+                        <img src="{{ asset('uploads') }}/{{ $author->author_img }}" width="100" alt="No Image">
                         @endif
                     </td>
                     <td>
-                        <form name="statusForm" id="statusForm" method="post" action="/admin/author/{{ $author->id }}/status">
+                        <form name="statusForm" id="statusForm" method="post" action="{{ asset('admin/author') }}/{{ $author->id }}/status">
                             @csrf
                             {{ method_field('put') }}
                             @if($author->status == 'DEACTIVE')
@@ -77,10 +77,10 @@ Manage Author
                         </form>
                     </td>
                     <td>
-                        <form name="deleteForm" id="deleteForm" method="post" action="/admin/author/{{ $author->id }}">
+                        <form name="deleteForm" id="deleteForm" method="post" action="{{ asset('admin/author') }}/{{ $author->id }}">
                             @csrf
                             {{ method_field('delete') }}
-                            <a href="/admin/author/{{ $author->id }}/edit" class="btn btn-info btn-flat btn-sm"> <i class="fa fa-edit"></i></a>
+                            <a href="{{ asset('admin/author') }}/{{ $author->id }}/edit" class="btn btn-info btn-flat btn-sm"> <i class="fa fa-edit"></i></a>
                             <button class="btn btn-danger btn-flat btn-sm" onclick="return confirm('Are you sure you want to delete this?')"> <i class="fa fa-trash-o"></i></button>
                         </form>
                     </td>

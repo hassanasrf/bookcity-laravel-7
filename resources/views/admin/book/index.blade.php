@@ -28,10 +28,10 @@
                     <a class="btn btn-danger btn-xm"><i class="fa fa-eye"></i></a>
                     <a class="btn btn-danger btn-xm"><i class="fa fa-eye-slash"></i></a>
                     <a class="btn btn-danger btn-xm"><i class="fa fa-trash"></i></a>
-                    <a href="/admin/book/create" class="btn btn-default btn-xm"><i class="fa fa-plus"></i></a>
+                    <a href="{{ asset('admin/book/create') }}" class="btn btn-default btn-xm"><i class="fa fa-plus"></i></a>
               </h3>
               <div class="box-tools">
-                <form method="get" action="/admin/book">
+                <form method="get" action="{{ asset('admin/book') }}">
                 <div class="input-group input-group-sm" style="width: 250px;">
                   <input type="text" name="s" class="form-control pull-right" placeholder="Search">
                   <div class="input-group-btn">
@@ -64,13 +64,13 @@
                   <td>{{ $book->category_id }}</td>
                   <td>
                     @if($book->book_img == 'No image found')
-                        <img src="/assets/admin/dist/img/noimage.png" width="100" alt="No Image">
+                        <img src="{{ asset('assets/admin/dist/img/noimage.png') }}" width="100" alt="No Image">
                     @else
-                        <img src="/uploads/{{ $book->book_img }}" width="100" alt="No Image">
+                        <img src="{{ asset('uploads/') }}/{{ $book->book_img }}" width="100" alt="No Image">
                     @endif
                   </td>
                   <td>
-                    <form name="statusForm" id="statusForm" method="post" action="/admin/book/{{ $book->id }}/status">
+                    <form name="statusForm" id="statusForm" method="post" action="{{ asset('admin/book') }}/{{ $book->id }}/status">
                         @csrf
                         {{ method_field('put') }}
                         @if($book->status == 'DEACTIVE')
@@ -81,7 +81,7 @@
                     </form>
                   </td>
                   <td>
-                      <form name="deleteForm" id="deleteForm" method="post" action="/admin/book/{{ $book->id }}">
+                      <form name="deleteForm" id="deleteForm" method="post" action="{{ asset('admin/book') }}/{{ $book->id }}">
                           @csrf
                           {{ method_field('delete') }}
                           <a href="/admin/book/{{ $book->id }}/edit" class="btn btn-info btn-flat btn-sm"> <i class="fa fa-edit"></i></a>
@@ -111,11 +111,8 @@
           </div>
             <!-- /.box-body -->
           </div>
-
-
     </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-
 @endsection

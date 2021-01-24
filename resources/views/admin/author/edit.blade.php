@@ -21,7 +21,7 @@
 
       <!-- SELECT2 EXAMPLE -->
       <!-- form start -->
-          <form name="formEdit" id="formEdit" method="post" enctype="multipart/form-data" action="/admin/author/{{ $author->id }}">
+          <form name="formEdit" id="formEdit" method="post" enctype="multipart/form-data" action="{{ asset('admin/author') }}/{{ $author->id }}">
           @csrf
         {{ method_field('put') }}
       <div class="box box-primary">
@@ -124,7 +124,7 @@
         <!-- /.box-body -->
         <div class="box-footer">
             <button type="submit" class="btn btn-primary">Update</button>
-            <a href="/admin/author" class="btn btn-danger">Cancel</a>
+            <a href="{{ asset('admin/author') }}" class="btn btn-danger">Cancel</a>
           </div>
       </div>
       <!-- /.box -->

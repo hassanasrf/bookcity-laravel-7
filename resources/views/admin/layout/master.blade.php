@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> @yield('page-title') | American Books</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="/assets/admin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/admin/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="/assets/admin/dist/css/AdminLTE.min.css">
-    <link rel="stylesheet" href="/assets/admin/dist/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/admin/dist/css/AdminLTE.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/admin/dist/css/skins/_all-skins.min.css') }}">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -65,16 +65,16 @@
           <!-- Tasks: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="/assets/admin/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Hassan Ashraf</span>
+              <img src="{{ asset('assets/admin/dist/img/user1-128x128.jpg') }}" class="user-image" alt="User Image">
+              <span class="hidden-xs">Hassan ASRF</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="/assets/admin/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="{{ asset('assets/admin/dist/img/user1-128x128.jpg') }}" class="img-circle" alt="User Image">
 
                 <p>
-                  Hassan Ashraf - Web Developer
+                  Hassan ASRF - Web Developer
                   <small>Member since Nov. 2020</small>
                 </p>
               </li>
@@ -103,10 +103,10 @@
                 <!-- Sidebar user panel -->
                 <div class="user-panel">
                     <div class="pull-left image">
-                        <img src="/assets/admin/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <img src="{{ asset('assets/admin/dist/img/user1-128x128.jpg') }}" class="img-circle" alt="User Image">
                     </div>
                     <div class="pull-left info">
-                        <p>Hassan Ashraf</p>
+                        <p>Hassan ASRF</p>
                     </div>
                 </div>
                 <!-- sidebar menu: : style can be found in sidebar.less -->
@@ -135,8 +135,8 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li class=""><a href="/admin/category/create"><i class="fa fa-circle-o"></i> Create Category </a></li>
-                    <li class="active"><a href="/admin/category"><i class="fa fa-circle-o"></i> View Category </a></li>
+                    <li class=""><a href="{{ asset('admin/category/create') }}"><i class="fa fa-circle-o"></i> Create Category </a></li>
+                    <li class="active"><a href="{{ asset('admin/category') }}"><i class="fa fa-circle-o"></i> View Category </a></li>
                 </ul>
             </li>
             <li class="{{ (request()->is('admin/author')) ? 'active' : '' }} treeview">
@@ -147,8 +147,8 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li class=""><a href="/admin/author/create"><i class="fa fa-circle-o"></i> Create Author </a></li>
-                    <li class="active"><a href="/admin/author"><i class="fa fa-circle-o"></i> View Author </a></li>
+                    <li class=""><a href="{{ asset('admin/author/create') }}"><i class="fa fa-circle-o"></i> Create Author </a></li>
+                    <li class="active"><a href="{{ asset('admin/author') }}"><i class="fa fa-circle-o"></i> View Author </a></li>
                 </ul>
             </li>
             <li class="{{ (request()->is('admin/book')) ? 'active' : '' }} treeview">
@@ -159,8 +159,8 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li class=""><a href="/admin/book/create"><i class="fa fa-circle-o"></i> Create Book </a></li>
-                    <li class="active"><a href="/admin/book"><i class="fa fa-circle-o"></i> View Book </a></li>
+                    <li class=""><a href="{{ asset('admin/book/create') }}"><i class="fa fa-circle-o"></i> Create Book </a></li>
+                    <li class="active"><a href="{{ asset('admin/book') }}"><i class="fa fa-circle-o"></i> View Book </a></li>
                 </ul>
             </li>
             <li class="{{ (request()->is('admin/media')) ? 'active' : '' }} treeview">
@@ -171,8 +171,8 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li class=""><a href="/admin/media/create"><i class="fa fa-circle-o"></i> Create Media </a></li>
-                    <li class="active"><a href="/admin/media"><i class="fa fa-circle-o"></i> View Media </a></li>
+                    <li class=""><a href="{{ asset('admin/media/create') }}"><i class="fa fa-circle-o"></i> Create Media </a></li>
+                    <li class="active"><a href="{{ asset('admin/media') }}"><i class="fa fa-circle-o"></i> View Media </a></li>
                 </ul>
             </li>
             <li class="{{ (request()->is('admin/team')) ? 'active' : '' }} treeview">
@@ -183,8 +183,8 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li class=""><a href="/admin/team/create"><i class="fa fa-circle-o"></i> Create Webmaster </a></li>
-                    <li class="active"><a href="/admin/team"><i class="fa fa-circle-o"></i> View Webmaster </a></li>
+                    <li class=""><a href="{{ asset('admin/team/create') }}"><i class="fa fa-circle-o"></i> Create Webmaster </a></li>
+                    <li class="active"><a href="{{ asset('admin/team') }}"><i class="fa fa-circle-o"></i> View Webmaster </a></li>
                 </ul>
             </li>
         </ul>
@@ -197,15 +197,14 @@
         <!-- /.content -->
     <!-- /.content-wrapper -->
     <footer class="main-footer">
-        <strong>Copyright &copy; 2019-2020 <a href="https://www.alfateemacademy.com/" target="_blank">Al-Fateem Academy</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; 2019-2020 <a href="https://www.alfateemacademy.com/" target="_blank">AFA</a>.</strong> All rights reserved.
     </footer>
     <!-- ./wrapper -->
-    <script src="/assets/admin/plugins/jQuery/jquery-2.2.3.min.js"></script>
-    <script src="/assets/admin/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{ asset('assets/admin/plugins/jQuery/jquery-2.2.3.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/bootstrap/js/bootstrap.min.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
-    <script src="/assets/admin/plugins/slimScroll/jquery.slimscroll.min.js"></script>
-    <script src="/assets/admin/dist/js/app.min.js"></script>
-    <script src="/assets/admin/dist/js/demo.js"></script>
+    <script src="{{ asset('assets/admin/plugins/slimScroll/jquery.slimscroll.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/dist/js/app.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/dist/js/demo.js') }}"></script>
 </body>
-
 </html>
