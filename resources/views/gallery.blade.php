@@ -13,14 +13,14 @@
       				<div class="col-lg-3 col-xs-6 r-full-width">
       					<div class="gallery-figure style-2"> 
       						@if($gallery->media_img == 'No image found')
-		                  		<img src="/assets/images/noimage.png" width="285" height="285" alt="No image found!">
+		                  		<img src="{{ asset('assets/images/noimage.png') }}" width="285" height="285" alt="No image found!">
 		                  	@else
-			                  	<img src="/uploads/{{ $gallery->media_img }}" width="285" height="285" alt="{{ $gallery->title }}">
+			                  	<img src="{{ asset('uploads') }}/{{ $gallery->media_img }}" width="285" height="285" alt="{{ $gallery->title }}">
 							@endif
 	                  		<div class="overlay">
 	                  			<ul class="position-center-x">
 	                  				<li><a href="#"><i class="fa fa-heart"></i>Likes</a></li>
-	                  				<li><a href="/assets/images/gallery-v2/img-01.jpg" data-rel="prettyPhoto[gallery]"><i class="fa fa-plus"></i></a></li>
+	                  				<li><a href="{{ asset('assets/images/gallery-v2/img-01.jpg') }}" data-rel="prettyPhoto[gallery]"><i class="fa fa-plus"></i></a></li>
 	                  			</ul>
 	                  		</div>
 	                  	</div>

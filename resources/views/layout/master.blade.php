@@ -8,22 +8,22 @@
 <title>@yield('page-title') | Book City</title>
 
 <!-- StyleSheets -->
-<link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
-<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
-<link rel="stylesheet" href="/assets/css/animate.css">
-<link rel="stylesheet" href="/assets/css/icomoon.css">
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="/assets/css/color-1.css">
-<link rel="stylesheet" href="/assets/css/style.css">
-<link rel="stylesheet" href="/assets/css/responsive.css">
-<link rel="stylesheet" href="/assets/css/transition.css">
+<link rel="stylesheet" href="{{ asset('assets/css/bootstrap/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/icomoon.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/color-1.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/transition.css') }}">
 
 <!-- FontsOnline -->
 <link href='https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400italic,400,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900italic,900,100italic,100' rel='stylesheet' type='text/css'>
 
 <!-- JavaScripts -->
-<script src="/assets/js/vendor/modernizr.js"></script>
+<script src="{{ asset('assets/js/vendor/modernizr.js') }}"></script>
 </head>
 <body>
 
@@ -77,7 +77,7 @@
 
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="/"><img src="/assets/images/logo-1.png" alt=""></a>
+                        <a href="/"><img src="{{ asset('assets/images/logo-1.png') }}" alt=""></a>
                     </div>
                     <!-- Logo -->
 
@@ -96,12 +96,12 @@
                     <!-- Navigation -->
                     <div class="navigation">
                         <ul>
-                            <li class="{{ Request::is('/') ? 'active' : null }}"><a href="/"><i class="fa fa-home"></i>Home</a></li>
-                            <li class="{{ Request::is('about') ? 'active' : null }}"><a href="/about"><i class="fa fa-files-o"></i>About</a></li>
-                            <li class="{{ Request::is('gallery') ? 'active' : null }}"><a href="/gallery"><i class="fa fa-files-o"></i>gallery</a></li>
-                            <li class="{{ Request::is('blog') ? 'active' : null }}"><a href="/blog"><i class="fa fa-pencil"></i>blog</a></li>
-                            <li class="{{ Request::is('author') ? 'active' : null }}"><a href="/author"><i class="fa fa-file-text"></i>author</a></li>
-                            <li class="{{ Request::is('contact') ? 'active' : null }}"><a href="/contact"><i class="fa fa-fax"></i>contact</a></li>
+                            <li class="{{ Request::is('/') ? 'active' : null }}"><a href="{{ asset('/') }}"><i class="fa fa-home"></i>Home</a></li>
+                            <li class="{{ Request::is('about') ? 'active' : null }}"><a href="{{ asset('/about') }}"><i class="fa fa-files-o"></i>About</a></li>
+                            <li class="{{ Request::is('gallery') ? 'active' : null }}"><a href="{{ asset('/gallery') }}"><i class="fa fa-files-o"></i>gallery</a></li>
+                            <li class="{{ Request::is('blog') ? 'active' : null }}"><a href="{{ asset('/blog') }}"><i class="fa fa-pencil"></i>blog</a></li>
+                            <li class="{{ Request::is('author') ? 'active' : null }}"><a href="{{ asset('/author') }}"><i class="fa fa-file-text"></i>author</a></li>
+                            <li class="{{ Request::is('contact') ? 'active' : null }}"><a href="{{ asset('/contact') }}"><i class="fa fa-fax"></i>contact</a></li>
                         </ul>
                     </div>              
                     <!-- Navigation -->
@@ -126,7 +126,7 @@
                     <!-- Footer Column -->
                     <div class="col-lg-4 col-sm-4">
                         <div class="footer-column logo-column">
-                            <a href="index-1.html"><img src="/assets/images/logo-2.png" alt=""></a>
+                            <a href="index-1.html"><img src="{{ asset('assets/images/logo-2.png') }}" alt=""></a>
                             <p>Find out how to prepare your book for an editor with these 4 writing tips! The editing process can be a wonderful opportunity for writers.</p>
                             <ul class="address-list">
                                 <li><i class="fa fa-home"></i>888 South Avenue Street, New York City.</li>
@@ -173,10 +173,8 @@
                             </div>
                         </div>
                         <!-- Footer Column -->
-
                 </div>
                 <!-- Columns Row -->
-
             </div>
         </div>
         <!-- Footer columns -->
@@ -241,31 +239,31 @@
 
 <!-- Java Script -->
 
-<script src="/assets/js/vendor/jquery.js"></script>        
-<script src="/assets/js/vendor/bootstrap.min.js"></script>
-<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-<script src="/assets/js/gmap3.min.js"></script>                  
-<script src="/assets/js/datepicker.js"></script>                 
-<script src="/assets/js/contact-form.js"></script>                   
-<script src="/assets/js/bigslide.js"></script>                           
-<script src="/assets/js/3d-book-showcase.js"></script>                   
-<script src="/assets/js/turn.js"></script>                           
-<script src="/assets/js/jquery-ui.js"></script>                              
-<script src="/assets/js/mcustom-scrollbar.js"></script>                  
-<script src="/assets/js/timeliner.js"></script>                  
-<script src="/assets/js/parallax.js"></script>                
-<script src="/assets/js/countdown.js"></script>  
-<script src="/assets/js/countTo.js"></script>        
-<script src="/assets/js/owl-carousel.js"></script>   
-<script src="/assets/js/bxslider.js"></script>   
-<script src="/assets/js/appear.js"></script>             
-<script src="/assets/js/sticky.js"></script>                 
-<script src="/assets/js/prettyPhoto.js"></script>            
-<script src="/assets/js/isotope.pkgd.js"></script>                    
-<script src="/assets/js/wow-min.js"></script>            
-<script src="/assets/js/classie.js"></script>                    
-<script src="/assets/js/main.js"></script>   
-<script src="/assets/js/myscript.js"></script>       
+<script src="{{ asset('assets/js/vendor/jquery.js') }}"></script>        
+<script src="{{ asset('assets/js/vendor/bootstrap.min.js') }}"></script>
+<script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="{{ asset('assets/js/gmap3.min.js') }}"></script>                  
+<script src="{{ asset('assets/js/datepicker.js') }}"></script>                 
+<script src="{{ asset('assets/js/contact-form.js') }}"></script>                   
+<script src="{{ asset('assets/js/bigslide.js') }}"></script>                           
+<script src="{{ asset('assets/js/3d-book-showcase.js') }}"></script>                   
+<script src="{{ asset('assets/js/turn.js') }}"></script>                           
+<script src="{{ asset('assets/js/jquery-ui.js') }}"></script>                              
+<script src="{{ asset('assets/js/mcustom-scrollbar.js') }}"></script>                  
+<script src="{{ asset('assets/js/timeliner.js') }}"></script>                  
+<script src="{{ asset('assets/js/parallax.js') }}"></script>                
+<script src="{{ asset('assets/js/countdown.js') }}"></script>  
+<script src="{{ asset('assets/js/countTo.js') }}"></script>        
+<script src="{{ asset('assets/js/owl-carousel.js') }}"></script>   
+<script src="{{ asset('assets/js/bxslider.js') }}"></script>   
+<script src="{{ asset('assets/js/appear.js') }}"></script>             
+<script src="{{ asset('assets/js/sticky.js') }}"></script>                 
+<script src="{{ asset('assets/js/prettyPhoto.js') }}"></script>            
+<script src="{{ asset('assets/js/isotope.pkgd.js') }}"></script>                    
+<script src="{{ asset('assets/js/wow-min.js') }}"></script>            
+<script src="{{ asset('assets/js/classie.js') }}"></script>                    
+<script src="{{ asset('assets/js/main.js') }}"></script>   
+<script src="{{ asset('assets/js/myscript.js') }}"></script>       
 
 </body>
 </html

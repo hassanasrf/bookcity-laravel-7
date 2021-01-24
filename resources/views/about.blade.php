@@ -27,7 +27,7 @@
 		    			<!-- Laptop Img -->
 		    			<div class="col-sm-6">
 		    				<div class="laptop-img">
-		    					<img class="floating" src="/assets/images/laptop.png" alt="">
+		    					<img class="floating" src="{{ asset('assets/images/laptop.png') }}" alt="">
 		    				</div>
 		    			</div>
 		    			<!-- Laptop Img -->
@@ -61,9 +61,9 @@
 						<div class="team-column">
 							<div class="team-img">
 								@if($team->team_img == 'No image found')
-									<img src="/assets/images/noimage.png" width="262" height="252" alt="No image found!">
+									<img src="{{ asset('assets/images/noimage.png') }}" width="262" height="252" alt="No image found!">
 								@else
-									<img src="/uploads/{{ $team->team_img }}" width="262" height="252" alt="{{ $team->fullname }}">
+									<img src="{{ asset('uploads') }}/{{ $team->team_img }}" width="262" height="252" alt="{{ $team->fullname }}">
 								@endif
 								<div class="overlay-padding">
 									<div class="overlay">
